@@ -1,0 +1,67 @@
+
+<BackgroundLayout>:
+    orientation: 'vertical'
+    padding: dp(10)
+    spacing: dp(10)
+    canvas.before:
+        Color:
+            rgba: 0.2, 0.3, 0.4, 1  # set background color to a nice blue-gray
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+<CalButton>:
+    text: 'Calculate'
+    font_size: dp(16)
+    bold: True
+    size_hint: 1, None
+    height: dp(40)
+    background_normal: ''
+    background_color: 0.2, 0.5, 0.8, 1  # set button background color to a nice blue
+    color: 1, 1, 1, 1  # set text color to white
+
+<TitleLabel>:
+    font_size: '30sp'
+    color: 1, 1, 1, 1
+
+<MyLabel>:
+    font_size: '20sp'
+    color: 0.5, 0.5, 0.5, 1
+
+<MyButton>:
+    font_size: '20sp'
+    background_color: 0, 0.6, 1, 1
+
+<MyTextInput@TextInput>:
+    font_size: '20sp'
+    background_color: 1, 1, 1, 0.5
+
+<MyBoxLayout@BoxLayout>:
+    orientation: 'vertical'
+    padding: 50
+    spacing: 50
+    canvas.before:
+        Color:
+            rgba: 0.3, 0.3, 0.3, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+<Button>:
+    background_normal: ''
+    background_color: 0.8, 0.8, 0.8, 1
+    color: 0, 0, 0, 1
+    font_size: 20
+    size_hint: 0.3, 0.2
+    border_radius: "20dp"
+
+<ToggleButton>:
+    background_normal: ''
+    background_color: 0.4, 0.4, 0.4, 1
+    color: 1, 1, 1, 1
+    font_size: 18
+    size_hint: 0.3, 0.2
+
+<Slider>:
+    background_color: 1, 0, 0, 1  # red color
+
